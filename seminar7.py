@@ -1,16 +1,47 @@
 #task10
 myFinalMarks = {'CSF': 75, 'FunPro': 80, 'WT': 85}
 
+
+
+def take_average(total, finalMarks):
+	average = 0
+	average = total/len(finalMarks)
+	return average
+
 def calculateAverage(finalMarks):
 	total = 0
-	average = 0
 
 	for key in finalMarks:
 		total = total+finalMarks[key]
 	average = total/len(finalMarks)
-	return average
+	return total
 
-print(calculateAverage(myFinalMarks))
+print(take_average(calculateAverage(myFinalMarks), myFinalMarks))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #task 11
 csf = {
@@ -20,7 +51,7 @@ csf = {
 'exam-mark':65
 }
 
-print(csf.get('cw1-weight')*csf.get('cw1-mark')+csf.get('exam-weight')*csf.get('exam-mark'))
+
 
 #slide 40
 def histogram(s): 
@@ -37,11 +68,6 @@ def reverse_lookup(d, v):
 		if d[k]==v:
 			return k
 	raise LookupError()
-
-h = histogram ('parrot')
-
-key = reverse_lookup(h,1)
-print(key)
 
 
 
