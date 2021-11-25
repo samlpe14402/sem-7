@@ -1,3 +1,4 @@
+from art import *
 #task10
 myFinalMarks = {'CSF': 75, 'FunPro': 80, 'WT': 85}
 
@@ -16,7 +17,15 @@ def calculateAverage(finalMarks):
 	average = total/len(finalMarks)
 	return total
 
-print(take_average(calculateAverage(myFinalMarks), myFinalMarks))
+class Person:
+	def __init__(self, firstname, lastname):
+		self.firstname = firstname
+		self.lastname = lastname
+	def displayname(self):
+		tprint(self.firstname + " " + self.lastname)
+		
+p1 = Person("Saidakhmad", "Jasurkhonov")
+p1.displayname()
 
 
 
